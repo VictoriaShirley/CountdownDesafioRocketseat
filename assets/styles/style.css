@@ -11,6 +11,37 @@ body {
   overflow: hidden;
 }
 
+body.active {
+  background: var(--black);
+}
+
+.btn {
+  width: 200px;
+  height: 90px;
+  border: 5px solid var(--text-color);
+  border-radius: 60px;
+  position: absolute;
+  cursor: pointer;
+  margin: 0 0 500px 1150px;
+}
+
+.btn:before {
+  content: '';
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  background: var(--text-color);
+  border-radius: 50%;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+  transition: left .5s;
+}
+
+.btn.active:before {
+  left: 115px;
+}
+
 .container {
   width: 80%;
 
@@ -60,6 +91,10 @@ body {
   font-size: 4.5rem;
   font-weight: 400;
   color: var(--black);
+}
+
+.countdown-time.active .countdown-time-item .countdown-time-item-number  {
+  color: var(--white);
 }
 
 .container .countdown footer {
