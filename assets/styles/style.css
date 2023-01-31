@@ -16,20 +16,20 @@ body.active {
 }
 
 .btn {
-  width: 200px;
-  height: 90px;
+  width: 60px;
+  height: 30px;
   border: 5px solid var(--text-color);
   border-radius: 60px;
   position: absolute;
   cursor: pointer;
-  margin: 0 0 500px 1150px;
+  margin-top: 145px;
 }
 
 .btn:before {
   content: '';
   position: absolute;
-  width: 80px;
-  height: 80px;
+  width: 20px;
+  height: 20px;
   background: var(--text-color);
   border-radius: 50%;
   top: 50%;
@@ -39,7 +39,7 @@ body.active {
 }
 
 .btn.active:before {
-  left: 115px;
+  left: 25px;
 }
 
 .container {
@@ -90,11 +90,14 @@ body.active {
 .countdown-time .countdown-time-item .countdown-time-item-number {
   font-size: 4.5rem;
   font-weight: 400;
-  color: var(--black);
+  color: var(--text-color);
 }
 
-.countdown-time.active .countdown-time-item .countdown-time-item-number  {
-  color: var(--white);
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .container .countdown footer {
@@ -159,13 +162,14 @@ body.active {
     font-size: 1.5rem;
   }
 
-  .container .hero-image {
+  .container .rocket-image {
     display: flex;
     align-items: center;
     justify-content: center;
   }
 
-  .container .hero-image img {
-    width: 80%;
+  .container .rocket-image img {
+    width: 70%;
+    margin-top: 20px;
   }
 }
